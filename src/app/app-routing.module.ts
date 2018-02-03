@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {HeroesComponent} from './heroes/heroes.component';
 import {RouterModule, Routes} from '@angular/router';
+import {DashboardComponent} from './dashboard/dashboard.component';
 
 // path가 heroes로 들어오면 HeroesComponent컴포넌트를 Route하라(부모인 app.component.html의 router-outlet로..
 const routes: Routes = [
-  { path: 'heroes', component: HeroesComponent }
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'dashboard', component: DashboardComponent}
 ];
 
 @NgModule({
