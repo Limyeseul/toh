@@ -3,6 +3,11 @@
   background-color: #CFD8DC !important;
   color: white;
 }
+/* 스타일 우선순위
+ui > li.selected {
+  background-color: #CFD8DC;
+  color: white;
+}*/
 .heroes {
   margin: 0 0 2em 0;
   list-style-type: none;
