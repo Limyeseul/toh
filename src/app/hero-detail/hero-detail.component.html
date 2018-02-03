@@ -1,0 +1,8 @@
+<!-- 선택된 객체를 보여주는 디테일 영역 -->
+<div *ngIf="hero">
+  <div>id: {{hero.id}}
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="이름을 입력하세요.">
+    </label>
+  </div>
+</div>
