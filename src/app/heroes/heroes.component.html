@@ -24,8 +24,15 @@
 
 
 <!-- let ~ of문법 알고있기 -->
+<!--
+  class binding 규칙
+  [class.클래스명]="true or false"
+  참이면 class="클래스명" 랜더링
+-->
 <ul class="heroes">
-  <li *ngFor="let hero of hero4" (click)="onSelect(hero)">
+  <li *ngFor="let hero of hero4" (click)="onSelect(hero)"
+      [class.selected]="hero===selectedHero"
+      [style.color]="hero===selectedHero ? 'red' : 'blue'">
     <span class="badge">{{hero.id}}</span>{{hero.name}}
   </li>
 </ul>
