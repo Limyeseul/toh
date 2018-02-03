@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Hero} from '../hero';
+import {HEROES} from '../mock-heroes';
 
 @Component({
   selector: 'app-heroes',
@@ -19,7 +20,7 @@ export class HeroesComponent implements OnInit {
 
   // new 생성 방법
   // 1. 타입만 선언 후
-  hero3: Hero;
+   hero3: Hero;
   // 2. 생성자에서 만듬 hero.ts에서 생성자 부분으로 가보자
   /*
   es5문법은 너무 길어지니까 아래처럼 한줄로 만들자.
@@ -28,8 +29,11 @@ export class HeroesComponent implements OnInit {
     this.hero3.id = 2;
     this.hero3.name = 'Win Storm';
   }*/
+
+  hero4 = HEROES;   // hero4: Hero[];
   constructor() {
     this.hero3 = new Hero(2, 'Win Storm');
+    this.hero4 = HEROES;
   }
 
 
