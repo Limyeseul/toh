@@ -1,0 +1,23 @@
+<p>
+  heroes works! app-heroes 내용들..!
+<!-- {{}} 컴포넌트에서 만든 내용을 넣는다. -->
+  {{hero}}
+</p>
+
+<!-- | uppercase :: angluar 내장 파이프 -->
+<h2>{{ hero2.name | uppercase }} Details</h2>
+<div>
+  <span>id: </span>{{hero2.id}}
+</div>
+
+<div>
+  <span>name: </span>{{hero2.name}}
+</div>
+
+<h2> {{hero3.name}} </h2>
+
+<div>
+  <label>name :
+    <input [(ngModel)]="hero3.name" placeholder="이름을 입력하세요.">
+  </label>
+</div>
