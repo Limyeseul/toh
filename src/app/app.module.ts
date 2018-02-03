@@ -7,6 +7,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import {FormsModule} from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import {HeroService} from './hero.service';
+import { AppRoutingModule } from './/app-routing.module';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import {HeroService} from './hero.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule  // =RouterModule.forRoot(path...) 차이없다.
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
